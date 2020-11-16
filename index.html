@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Hogwarts Top Trumps</title>
+</head>
+<body>
+    <div>
+        <h1>Hogwarts Top Trumps</h1>
+
+        <div class="container cards">
+
+            <div class="player-one">
+                <div class="card">
+                    <h2>Player One</h2>
+                    <img src="" alt="picture of witch or wizard">
+                    <h3 class="witch-wizard">name: <span>name of witch or wizard</span></h3>
+
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Score</th>
+                        </tr>
+                        <tr>
+                            <td>courage:</td>
+                            <td><span class="courage">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>potions:</td>
+                            <td><span class="potions">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>spells:</td>
+                            <td><span class="spells">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>broom skills:</td>
+                            <td><span class="broom">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>wand power:</td>
+                            <td><span class="wand">score</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class=card-total>Total cards: <span class=number-of-cards>number</span></div>
+            </div>
+
+            <div class = "card-pile">
+               
+                <div class="card">
+                    <h2>Cards</h2>
+                    <img src="" alt="picture of witch or wizard">
+                    <h3 class="witch-wizard">name: <span>name of witch or wizard</span></h3>
+
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Score</th>
+                        </tr>
+                        <tr>
+                            <td>courage:</td>
+                            <td><span class="courage">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>potions:</td>
+                            <td><span class="potions">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>spells:</td>
+                            <td><span class="spells">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>broom skills:</td>
+                            <td><span class="broom">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>wand power:</td>
+                            <td><span class="wand">score</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class=card-total>Total cards: <span class=number-of-cards>number</span></div>
+            </div> 
+            
+            <div class="player-two">
+                <div class="card">
+                    <h2>Player Two</h2>
+                    <img src="" alt="picture of witch or wizard">
+                    <h3 class="witch-wizard">name: <span>name of witch or wizard</span></h3>
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Score</th>
+                        </tr>
+                        <tr>
+                            <td>courage:</td>
+                            <td><span class="courage">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>potions:</td>
+                            <td><span class="potions">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>spells:</td>
+                            <td><span class="spells">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>broom skills:</td>
+                            <td><span class="broom">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>wand power:</td>
+                            <td><span class="wand">score</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class=card-total>Total cards: <span class=number-of-cards>number</span></div>
+            </div>
+
+        </div>
+
+      
+        <h3 class="category">
+            The category is <span class="category-name">category name.</span>
+        </h3>
+      
+        <div class = "container messages">
+            <p class="round winner"> 
+                Player <span class="one">One's</span><span class="two">Two's</span> card trumps Player<span class="one">One's</span><span class="two">Two's</span> card. 
+                <br>
+                Player <span class="one">One</span><span class="two">Two</span> press the button to move player <span class="one">One's</span><span class="two">Two's</span> card and any cards set aside to your pile.
+            </p>
+            <p class="round limbo"> 
+                Both cards' categories are equal. Press the button to move both players' to the set aside pile.
+            </p>
+            <p class="round categories">
+                Player <span class="one">One</span><span class="two">Two</span> click on the drop-down menu to choose the category.
+            </p>
+            <p class="round compare">
+                Press the button to compare the cards.
+            </p>
+            <p class="game winner">
+                The winner is <span class="one">Player One</span><span class="Two">Player Two</span>
+            </p>
+            <p class="game new">
+                Press the button to shuffle and deal the cards for a new game.
+            </p>
+        </div>
+
+        <div class = "container buttons">
+            <button class="shuffle">Shuffle</button>
+
+            <label for="categories">Choose a category:</label>
+            <select name="categories">
+                <option value="courage" >Courage</option>
+                <option value="potions" id="potions">Potions</option>
+                <option value="spells">Spells</option>
+                <option value="broom-skill">Broom Skills</option>
+                <option value="wand-power">Wand Power</option>
+            </select>
+
+            <button class="compare">Compare</button>
+
+            <button class="move">Move</button>
+        </div>
+     
+    </div>
+
+<script src="./top_trump_more_categories.js"></script>
+</body>
+</html>
