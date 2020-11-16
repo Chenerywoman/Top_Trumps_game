@@ -205,19 +205,3 @@ while (playerOne.length > 0 && playerTwo.length > 0) {
 }
 
 playerOne.length == 30 ? console.log(`player 1 wins`) : console.log("player 2 wins");
-
-const readline = require("readline");
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
-let top = ""
-
-rl.question("which topic do you choose?", (topic) =>{
-    console.log(topic)
-    top = topic;
-    rl.close();
-})
-
-console.log(top);

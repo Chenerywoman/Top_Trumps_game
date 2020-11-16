@@ -34,6 +34,7 @@ h1 {
 .card{
     display: inline-block; 
     margin: auto;
+    padding-top: 10px;
     padding-bottom: 10px;
     border: 2px solid #CB997E;
     background-color: #9c1203;
@@ -41,6 +42,11 @@ h1 {
     font-size: large;
     box-shadow: 5px 5px 10px #a58d7e;
     color: #2d004d;
+}
+
+img {
+    height: 50px;
+    width: 50px;
 }
 
 table {
@@ -77,7 +83,7 @@ td, th{
     display: none;
 }
 
-.round {
+.round, .turn {
     display: none;
 }
 
@@ -87,6 +93,7 @@ td, th{
 
 .compare, .move {
     display: none;
+    margin-top: 20px;
 }
 
 .buttons {

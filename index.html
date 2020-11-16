@@ -13,8 +13,8 @@
         <div class="container cards">
 
             <div class="player-one">
+                <h2>Player One's cards</h2>
                 <div class="card">
-                    <h2>Player One</h2>
                     <img src="" alt="picture of witch or wizard">
                     <h3 class="witch-wizard">name: <span>name of witch or wizard</span></h3>
 
@@ -49,9 +49,8 @@
             </div>
 
             <div class = "card-pile">
-               
+                <h2>Card pile</h2>
                 <div class="card">
-                    <h2>Cards</h2>
                     <img src="" alt="picture of witch or wizard">
                     <h3 class="witch-wizard">name: <span>name of witch or wizard</span></h3>
 
@@ -86,8 +85,8 @@
             </div> 
             
             <div class="player-two">
+                <h2>Player Two's cards</h2>
                 <div class="card">
-                    <h2>Player Two</h2>
                     <img src="" alt="picture of witch or wizard">
                     <h3 class="witch-wizard">name: <span>name of witch or wizard</span></h3>
                     <table>
@@ -128,25 +127,21 @@
         </h3>
       
         <div class = "container messages">
+            <p class="game new">
+                Press the button to shuffle and deal the cards for a new game.
+            </p>
+            <p class="turn">
+                Player <span class="player">player</span>'s turn to choose the category. Click on the drop-down menu then click the Compare button.
+            </p>
             <p class="round winner"> 
-                Player <span class="one">One's</span><span class="two">Two's</span> card trumps Player<span class="one">One's</span><span class="two">Two's</span> card. 
-                <br>
-                Player <span class="one">One</span><span class="two">Two</span> press the button to move player <span class="one">One's</span><span class="two">Two's</span> card and any cards set aside to your pile.
+                Player <span class="player">player</span>'s card wins. 
+                Press the button to move the losing card and any cards from the set aside pile to Player <span class="player">player</span>.
             </p>
             <p class="round limbo"> 
                 Both cards' categories are equal. Press the button to move both players' to the set aside pile.
             </p>
-            <p class="round categories">
-                Player <span class="one">One</span><span class="two">Two</span> click on the drop-down menu to choose the category.
-            </p>
-            <p class="round compare">
-                Press the button to compare the cards.
-            </p>
             <p class="game winner">
-                The winner is <span class="one">Player One</span><span class="Two">Player Two</span>
-            </p>
-            <p class="game new">
-                Press the button to shuffle and deal the cards for a new game.
+                The winner is <span class="player">player</span>!
             </p>
         </div>
 
@@ -158,10 +153,11 @@
                 <option value="courage" >Courage</option>
                 <option value="potions" id="potions">Potions</option>
                 <option value="spells">Spells</option>
-                <option value="broom-skill">Broom Skills</option>
-                <option value="wand-power">Wand Power</option>
+                <option value="broomSkill">Broom Skills</option>
+                <option value="wandPower">Wand Power</option>
             </select>
-
+            
+            <br>
             <button class="compare">Compare</button>
 
             <button class="move">Move</button>
