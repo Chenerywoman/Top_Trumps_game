@@ -397,11 +397,15 @@ compareButton.addEventListener("click", () => {
     });
 
     moveButton.addEventListener("click", () => {
-        // NEED TO MOVE THE WINNER's top card i 
+
+        // need to change turn to the winner
+        // make the compare button show again
 
         if (roundWinner == 1) {
                 playerOne.push(playerTwo[0]);
                 playerTwo.shift();
+                let frontCard = playerOne.shift();
+                playerOne.push(frontCard);
 
                 if (limbo.length > 0) {
            
@@ -409,26 +413,37 @@ compareButton.addEventListener("click", () => {
                     playerOne.push(limbo[i])
                 }
     
-                limbo.splice(0, limbo.length)
+                limbo.splice(0, limbo.length);
+    
             }
+            console.log(playerOne[playerOne.length - 1])
+            console.log(playerOne[playerOne.length - 2])
 
         } else if (playerTwo[0][category] > playerOne[0][category]) {
             playerTwo.push(playerOne[0]);
             playerOne.shift();
+            let frontCard = playerTwo.shift();
+            playerTwo.push(frontCard);
     
             if (limbo.length > 0) {
         
                 for (i = 0; i < limbo.length; i++){
-                    playerTwo.push(limbo[i])
+                    playerTwo.push(limbo[i]);
                 }
     
-                limbo.splice(0, limbo.length)
+                limbo.splice(0, limbo.length);
+
             }
+
+            console.log(playerTwo[playerTwo.length - 1])
+            console.log(playerTwo[playerTwo.length - 2])
 
         } else {
             limbo.push(playerOne[0], playerTwo[0])
             playerOne.shift();
             playerTwo.shift();
+
+            console.log(limbo)
         }
 
         populateCards(playerOneTopCard, playerOne)
@@ -436,6 +451,10 @@ compareButton.addEventListener("click", () => {
     
         populateCards(playerTwoTopCard, playerTwo)
         playerTwoPile.getElementsByClassName("number-of-cards")[0].innerHTML = playerTwo.length;
+
+        showElements(selectCategoriesLabel);
+        showElements(selectCategoriesMenu);
+        showElements(compareButton);
 
     })
     
