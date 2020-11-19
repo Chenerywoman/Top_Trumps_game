@@ -333,11 +333,9 @@ shuffleButton.addEventListener("click", () => {
         playerTurn == 1 ? playerTurn = 2 : playerTurn = 1;
     }
 
-    document.getElementsByClassName("player-one")[0].style.width = "50%";
     populateCards(playerOneTopCard, playerOne)
     document.getElementsByClassName("player-one")[0].getElementsByClassName("number-of-cards")[0].innerHTML = playerOne.length;
 
-    document.getElementsByClassName("player-two")[0].style.width = "50%";
     populateCards(playerTwoTopCard, playerTwo)
     document.getElementsByClassName("player-two")[0].getElementsByClassName("number-of-cards")[0].innerHTML = playerTwo.length;
 
@@ -366,12 +364,7 @@ shuffleButton.addEventListener("click", () => {
         playerTwoTopCard.getElementsByTagName("table")[0].style.display = "none";
 
         playerTwoTopCard.appendChild(div);
-        playerTwoTopCard.getElementsByTagName("div")[0].style.fontSize = "50px";
         playerTwoTopCard.getElementsByTagName("div")[0].setAttribute("id", "player_two_back");
-        playerTwoTopCard.getElementsByTagName("div")[0].style.transform = "rotate(45deg)"
-        playerTwoTopCard.getElementsByTagName("div")[0].style.color = "silver";
-        playerTwoTopCard.getElementsByTagName("div")[0].style.zIndex = "1";
-        playerTwoTopCard.getElementsByTagName("div")[0].style.padding = "95px 50px 95px 50px";
         playerTwoTopCard.style.backgroundColor = "#00165e";
         
 
@@ -381,12 +374,7 @@ shuffleButton.addEventListener("click", () => {
         playerOneTopCard.getElementsByTagName("table")[0].style.display = "none";
 
         playerOneTopCard.appendChild(div);
-        playerOneTopCard.getElementsByTagName("div")[0].style.fontSize = "50px";
         playerOneTopCard.getElementsByTagName("div")[0].setAttribute("id", "player_one_back");
-        playerOneTopCard.getElementsByTagName("div")[0].style.transform = "rotate(45deg)";
-        playerOneTopCard.getElementsByTagName("div")[0].style.color = "silver";
-        playerOneTopCard.getElementsByTagName("div")[0].style.zIndex = "1";
-        playerOneTopCard.getElementsByTagName("div")[0].style.padding = "95px 50px 95px 50px";
         playerOneTopCard.style.backgroundColor = "#00165e";
     }
 
@@ -511,16 +499,14 @@ compareButton.addEventListener("click", () => {
 
             if (playerOne.length == witchesWizards.length){
 
-                hideElements(document.getElementsByClassName("player-two")[0])
-                document.getElementsByClassName("player-one")[0].style.width = "100%"
-                populateCards(playerOneTopCard, playerOne)
+                hideElements(document.getElementsByClassName("player-two")[0]);
+                populateCards(playerOneTopCard, playerOne);
                 document.getElementsByClassName("player-one")[0].getElementsByClassName("number-of-cards")[0].innerHTML = playerOne.length;
             
             } else {
 
-                hideElements(document.getElementsByClassName("player-one")[0])
-                document.getElementsByClassName("player-two")[0].style.width = "100%"
-                populateCards(playerTwoTopCard, playerTwo)
+                hideElements(document.getElementsByClassName("player-one")[0]);
+                populateCards(playerTwoTopCard, playerTwo);
                 document.getElementsByClassName("player-two")[0].getElementsByClassName("number-of-cards")[0].innerHTML = playerTwo.length;
             }
 
@@ -538,11 +524,6 @@ compareButton.addEventListener("click", () => {
 
                 playerTwoTopCard.appendChild(div);
                 playerTwoTopCard.getElementsByTagName("div")[0].setAttribute("id", "player_two_back");
-                playerTwoTopCard.getElementsByTagName("div")[0].style.fontSize = "50px"
-                playerTwoTopCard.getElementsByTagName("div")[0].style.transform = "rotate(45deg)"
-                playerTwoTopCard.getElementsByTagName("div")[0].style.color = "silver";
-                playerTwoTopCard.getElementsByTagName("div")[0].style.zIndex = "1";
-                playerTwoTopCard.getElementsByTagName("div")[0].style.padding = "95px 50px 95px 50px";
                 playerTwoTopCard.style.backgroundColor = "#00165e";
 
             } else {
@@ -552,11 +533,6 @@ compareButton.addEventListener("click", () => {
 
                 playerOneTopCard.appendChild(div);
                 playerOneTopCard.getElementsByTagName("div")[0].setAttribute("id", "player_one_back");
-                playerOneTopCard.getElementsByTagName("div")[0].style.fontSize = "50px"
-                playerOneTopCard.getElementsByTagName("div")[0].style.transform = "rotate(45deg)"
-                playerOneTopCard.getElementsByTagName("div")[0].style.color = "silver";
-                playerOneTopCard.getElementsByTagName("div")[0].style.zIndex = "1";
-                playerOneTopCard.getElementsByTagName("div")[0].style.padding = "95px 50px 95px 50px";
                 playerOneTopCard.style.backgroundColor = "#00165e";
             }
 

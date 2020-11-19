@@ -5,6 +5,7 @@
 body {
     background-color: #e3a000;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 h1 {
@@ -19,6 +20,7 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center; 
+    align-items: center;
     width: 100%;    
 }
 
@@ -41,6 +43,14 @@ h1 {
 .player-one, .player-two{
     width: 50%;
     display: none;  
+}
+
+#player_one_back, #player_two_back{
+    font-size: 50px;
+    transform: rotate(45deg);
+    color: silver;
+    z-index: 1;
+    padding: 95px 50px 95px 50px;
 }
 
 .card-pile {
@@ -182,17 +192,32 @@ select {
         margin-top: 25px;
     }
 
-
 }
-    /* not working
 
-    .player-one #player_one_back{
-        font-size: 25px;
+@media only screen and (max-width: 600px) {
+
+    .container.cards{
+        width: 100vw;
+        margin: auto;
     }
-    
-    .player-two #player_two_back{
-        font-size: 25px;
-    } */
+
+    .card-pile .card{
+        width: 55%;
+    }
+
+    .card {
+        height:85%; 
+        width:100%;
+    }
+
+    .messages {
+        margin-top: 10%;
+    }
+
+    #player_one_back, #player_two_back{
+            font-size: 40px;
+    }
+}
 
 @media only screen and (max-width: 500px) {
 
@@ -201,22 +226,22 @@ select {
     }
 
     .container.cards{
-        flex-direction: column;
-        /* min-width: 100vh; */
-        margin-left: auto;
-        margin-right: auto;
-        border:2px solid red;
+        width: 100vw;
     }
 
-    .player-one, .player-two{
-        border: 2px solid black;    
+    .player-one, .player-two, .card-pile{
+        width: 100vw; 
+        margin: 0 10% 0 10%
     }
 
-    /* .card {
-        height:auto; 
-        width:auto;
-        margin: auto;   
-    } */
+    #player_one_back, #player_two_back{
+        font-size: 40px;
+    }
+    
+    .card {
+        height:75%; 
+        width:100%;
+    }
 
     h3 {
         margin-top: 5px;
@@ -239,8 +264,4 @@ select {
         font-size: 20px;
     }
 
-
-
-/*need to remove width on .player-one, player-two and card-pile for smaller screens so can flex
-or find a different way as had to set the width & height for the back of the card
-*/
+}
