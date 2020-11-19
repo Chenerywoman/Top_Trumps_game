@@ -11,6 +11,7 @@ h1 {
     text-align: center;
     color: 	#00165e;
     font-size: 40px;
+    margin: 0;
 }
 
 .container {
@@ -18,20 +19,41 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center; 
-    width: 100%;
-    
+    width: 100%;    
+}
+
+.container.cards{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container.messages {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #00165e;
+    font-size: 25px;
+
 }
 
 .player-one, .player-two{
     width: 50%;
-    display: none;
+    display: none;  
 }
 
 .card-pile {
     width:100%;
 }
 
+h2{ 
+    color: 	#00165e;
+}
+
 .card{
+    height: 400px; 
+    width:300px;
     display: inline-block; 
     margin: auto;
     padding-top: 10px;
@@ -42,6 +64,7 @@ h1 {
     font-size: large;
     box-shadow: 5px 5px 10px #a58d7e;
     color: #2d004d;
+
 }
 
 img {
@@ -51,7 +74,7 @@ img {
 
 table {
     border-spacing: 50px 5px;
-    margin: 5px;
+    margin: auto;
 }
 
 td, th{
@@ -67,13 +90,6 @@ td, th{
     color: #00165e;
 }
 
-.messages {
-    width: 100%;
-    display: inline-block;
-    color: #00165e;
-    font-size: 35px;
-}
-
 .category {
     width: 100%;
     display: inline-block;
@@ -83,12 +99,21 @@ td, th{
     display: none;
 }
 
+.game.new {
+    margin: 5px auto 5px auto;
+}
+
 .round, .turn {
     display: none;
+    margin: 5px auto 5px auto;
 }
 
 .winner {
     display: none;
+}
+
+.game.winner{
+    font-weight: bold;
 }
 
 .compare, .move {
@@ -105,19 +130,19 @@ button {
     background-color: #033807;
     color: silver;
     border: 1px solid silver;
-    font-size: 35px;
+    font-size: 25px;
     padding: 5px 10px 5px 10px;
     border-radius: 10%;
 }
 
 label {
-    font-size: 35px;
+    font-size: 25px;
     color: #033807;
     display: none;
 }
 
 select {
-    font-size: 35px;
+    font-size: 25px;
     background-color: #033807; 
     color: silver; 
     border-radius: 5%;
@@ -125,4 +150,97 @@ select {
     display: none;
 }
 
-/*need to remove width on .player-one, player-two and card-pile for smaller screens so can flex*/
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    
+    .card{
+        height:375px; 
+        width:300px;
+    }
+
+    .container.messages{
+        font-size: 20px;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    body {
+        margin-top: 50px;
+    }
+    h3 {
+        margin: 0.5%;
+    }
+
+    .card {
+        height:370px; 
+        width:260px;
+    }
+
+    .container.messages{
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+
+}
+    /* not working
+
+    .player-one #player_one_back{
+        font-size: 25px;
+    }
+    
+    .player-two #player_two_back{
+        font-size: 25px;
+    } */
+
+@media only screen and (max-width: 500px) {
+
+    .card-total{
+        font-size: 20px;
+    }
+
+    .container.cards{
+        flex-direction: column;
+        /* min-width: 100vh; */
+        margin-left: auto;
+        margin-right: auto;
+        border:2px solid red;
+    }
+
+    .player-one, .player-two{
+        border: 2px solid black;    
+    }
+
+    /* .card {
+        height:auto; 
+        width:auto;
+        margin: auto;   
+    } */
+
+    h3 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    label {
+        font-size: 20px;
+    }
+
+    .container.messages{
+        font-size: 20px;
+    }
+    
+    select {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 20px;
+    }
+
+
+
+/*need to remove width on .player-one, player-two and card-pile for smaller screens so can flex
+or find a different way as had to set the width & height for the back of the card
+*/
