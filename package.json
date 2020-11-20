@@ -1,0 +1,23 @@
+{
+  "name": "trump_card_challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "DOM_version.js",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chenerywoman/Top_Trumps_game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chenerywoman/Top_Trumps_game/issues"
+  },
+  "homepage": "https://github.com/Chenerywoman/Top_Trumps_game#readme"
+}
