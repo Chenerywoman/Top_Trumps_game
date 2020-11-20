@@ -1,282 +1,75 @@
 const prompt = require('prompt-sync')({sigint: true});
 
-const witchesWizards = [
-
-    {
-        name: "Gilderoy Lockhart",
-        courage: 22,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22,
-
-    },
-    {
-        name: "Albus Potter",
-        courage: 29,
-        potions: 11, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22,
-
-    },
-    {
-        name: "Rubeus Hagrid",
-        courage: 28,
-        potions: 15, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-
-    },
-    {
-        name: "Cho Chang",
-        courage: 27,
-        potions: 18, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-
-    },
-    {
-        name: "Luna Lovegood",
-        courage: 26,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-
-    },
-    {
-        name: "Ron Weasley",
-        courage: 25,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-    },
-    {
-        name: "Neville Longbottom",
-        courage: 48,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-    },
-    {
-        name: "Fred Weasley",
-        courage: 29,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-
-    },
-    {
-        name: "George Weasley",
-        courage: 29,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-    },
-    {
-        name: "Newt Schamander",
-        courage: 21,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22,
-
-    },
-    {
-        name: "Draco Malfoy",
-        courage: 15,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-    },
-    {
-        name: "Ginny Weasley",
-        courage: 19,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-    },
-    {
-        name: "Padma Patil",
-        courage: 18,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-
-    },
-    {
-        name: "Cedric Diggory",
-        courage: 32,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-
-    },
-    {
-        name: "James Potter",
-        courage: 25,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-
-    },
-    {
-        name: "Bill Weasley",
-        courage: 25,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22,
-    },
-    {
-        name: "Filius Flitwick",
-        courage: 25,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-
-    },
-    {
-        name: "Lucius Malfoy",
-        courage: 25,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-    },
-    {
-        name: "Molly Weasley",
-        courage: 25,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22,
-    },
-    {
-        name: "Sirius Black",
-        courage: 25,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-
-    },
-    {
-        name: "Lily Potter",
-        courage: 25,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-
-    },
-    {
-        name: "Harry Potter",
-        courage: 25,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-
-    },
-    {
-        name: "Horace Slughorn",
-        courage: 25,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-
-    },
-    {
-        name: "Hermione Granger",
-        courage: 25,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-
-    },
-    {
-        name: "Remus Lupin",
-        courage: 25,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-
-    },
-    {
-        name: "Bellatrix Lestrange",
-        courage: 25,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-
-    },
-    {
-        name: "Minerva McGonagall",
-        courage: 25,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-
-    },
-    {
-        name: "Severus Snape",
-        courage: 25,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-
-    },
-    {
-        name: "Tom Riddle",
-        courage: 25,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22,
-    },
-    {
-        name: "Albus Dumbledore",
-        courage: 25,
-        potions: 10, 
-        spells: 29,
-        broomSkill: 15,
-        wandPower: 22
-
+class Graduate {
+    constructor(name, matriculation, wand, potions, spells, courage){
+        this._name = name,
+        this._matriculation = matriculation,
+        this._potions = potions;
+        this._spells = spells;
+        this._wand = wand;
+        this._courage = courage;
     }
-];
+        get name() {
+            return this._name;
+        }
+        get matriculation(){
+            return this._matriculation;
+        }
+        get wand(){
+            return this._wand;
+        }
+        get potions() {
+            return this._potions;
+        }
+        get spells(){
+            return this._spells;
+        }
+        get courage(){
+            return this._courage;
+        }
+}
 
-// const compareCards = (card, property) => {
-//     return card[property]
-// }
+const albusDumbledore = new Graduate("Albus Dumbledore", 1892, 15, 4, 7, 27);
+const harryPotter = new Graduate("Harry Potter", 1991, 11, 7, 4, 30 );
+const severusSnape = new Graduate("Severus Snape", 1971, 13, 2, 9, 26);
+const siriusBlack = new Graduate("Sirius Black", 1971, 12, 6, 5, 22);
+const ronWeasley = new Graduate("Ron Weasley", 1991, 14, 11, 4, 29);
+const hermioneGranger = new Graduate("Hermione Granger", 1991, 10, 5, 3, 29);
+const tomRiddle = new Graduate("Tom Riddle", 1938, 13, 11, 10, 25);
+const cedricDiggory = new Graduate("Cedric Diggory", 1989, 12, 2, 4, 21);
+const bellatrixLeStrange = new Graduate("Bellatrix LeStrange", 1962, 12, 7, 8, 23);
+const rubeusHagrid = new Graduate("Rubeus Hagrid", 1940, 16, 1, 3, 24);
+const fleurDelacour = new Graduate("Fleur Delacour", 1994, 9, 7, 2, 12);
+const ginnyWeasley = new Graduate("Ginny Weasley", 1992, 7, 12, 2, 20);
+const argusFinch = new Graduate("Argus Filch", 1973, 0, 5, 1);
+const remusLupin = new Graduate("Remus Lupin", 1971, 0, 4, 8, 19);
+const lunaLovegood = new Graduate("Luna Lovegood", 1992, 6, 2, 1, 11);
+const dracoMalfoy = new Graduate("Draco Malfoy", 1991, 10, 4, 4, 18);
+const mollyWeasley = new Graduate("Molly Weasley", 1961, 24, 1, 17);
+const nevilleLongbottom = new Graduate("Neville Longbottom", 1991, 13, 4, 1, 25);
+const minervaMcGonagall = new Graduate("Minerva McConagall", 1947, 9, 8, 6, 16);
+const sybillTrelawney = new Graduate("Sybill Trelawney", 1973, 7, 4, 1, 3);
+const nymphadoraTonks = new Graduate("Nymphadora Tonks", 1984, 14, 4, 2, 4);
+const horaceSlughorn = new Graduate("Horace Slughorn", 1931, 10, 8, 2, 9);
+const victorKrum = new Graduate("Victor Krum", 1994, 10, 2, 5, 7);
+const gilderoyLockhart = new Graduate("Gilderoy Lockhart", 1992, 9, 11, 2, 6);
+const arthurWeasley = new Graduate("Arthur Weasley", 1961, 12, 22, 2, 15);
+const luciusMalfoy = new Graduate("Lucius Malfoy", 1965, 18, 4, 7, 14);
+const choChang = new Graduate("Cho Chang", 1990, 6, 2, 2, 5);
+const peterPettigrew = new Graduate("Peter Pettigrew", 1971, 1, 9, 6, 13);
+const fredWeasley = new Graduate("Fred Weasley", 1985, 10, 12, 8, 12 );
+const georgeWeasley = new Graduate("George Weasley", 1985, 10, 13, 7, 12)
 
-const cardsToShuffle = [...witchesWizards];
+const graduates = [albusDumbledore, harryPotter, severusSnape, siriusBlack, ronWeasley, hermioneGranger, tomRiddle, cedricDiggory, bellatrixLeStrange, rubeusHagrid, fleurDelacour, ginnyWeasley, argusFinch, remusLupin, lunaLovegood, dracoMalfoy, mollyWeasley, nevilleLongbottom, minervaMcGonagall, sybillTrelawney, nymphadoraTonks, horaceSlughorn, victorKrum, gilderoyLockhart, arthurWeasley, luciusMalfoy, choChang, peterPettigrew, fredWeasley, georgeWeasley]
+
+const cardsToShuffle = [...graduates];
 
 const limbo = [];
 const playerOne = [];
 const playerTwo = [];
 let playerTurn = 1;
-const categories = ['courage', 'potions', 'spells', 'broomSkill', 'wandPower'];
-const categoryQuestion = "Please choose one of the following categories: courage, potions, spells, broomSkill, wandPower: ";
+const categories = ['matriculation', 'wand', 'potions', 'spells', 'courage'];
+const categoryQuestion = "Please choose one of the following categories: matriculation, wand, potions, spells, courage: ";
 let category = "";
 
 for (i = 0; i < 30; i++) {
@@ -288,16 +81,28 @@ for (i = 0; i < 30; i++) {
 
 while (playerOne.length > 0 && playerTwo.length > 0) {
 
+    let roundWinner = "player";
+
     category = prompt(categoryQuestion,'courage');
     while (!categories.includes(category)){
         console.log(`${category} is not one of the categories.`)
         category = prompt(categoryQuestion, 'courage')
     } 
     console.log(`Thanks. The category this round is ${category}.`)
+
+    console.log(playerOne[0][category], playerTwo[0][category])
     
     if (playerOne[0][category] > playerTwo[0][category]) {
+
+        roundWinner = "Player one";
+
+        console.log(`This round ${roundWinner} wins: Player 1 card: ${playerOne[0].name}, ${category}: ${playerOne[0][category]} v player 2 card: ${playerTwo[0].name}, ${category}: ${playerTwo[0][category]}`)
+
+        
         playerOne.push(playerTwo[0]);
         playerTwo.shift();
+        let frontCard = playerOne.shift();
+        playerOne.push(frontCard);
 
         if (limbo.length > 0) {
        
@@ -310,8 +115,15 @@ while (playerOne.length > 0 && playerTwo.length > 0) {
         }
     }
     else if (playerTwo[0][category] > playerOne[0][category]) {
+        
+        roundWinner = "Player two";
+
+        console.log(`This round ${roundWinner} wins: Player 1 card: ${playerOne[0].name}, ${category}: ${playerOne[0][category]} v player 2 card: ${playerTwo[0].name}, ${category}: ${playerTwo[0][category]}`)
+       
         playerTwo.push(playerOne[0]);
         playerOne.shift();
+        let frontCard = playerTwo.shift();
+        playerTwo.push(frontCard);
 
         if (limbo.length > 0) {
     
@@ -324,13 +136,19 @@ while (playerOne.length > 0 && playerTwo.length > 0) {
         }
 
     } else {
+
+        roundWinner = "no player";
+
+        console.log(`This round ${roundWinner} wins: Player 1 card: ${playerOne[0].name}, ${category}: ${playerOne[0][category]} v player 2 card: ${playerTwo[0].name}, ${category}: ${playerTwo[0][category]}`);
+
         limbo.push(playerOne[0], playerTwo[0])
         playerOne.shift();
         playerTwo.shift();
     }
 
     if (playerOne.length > 0 && playerTwo.length > 0) {
-        console.log(`This round: Player 1 ${category}:${playerOne[0][category]}, total cards: ${playerOne.length}; player 2 ${category}:${playerTwo[0][category]}; total cards ${playerTwo.length}; cards in limbo: ${limbo.length}`)
+      
+        console.log(`Following this round: player 1 total cards: ${playerOne.length}; player 2 total cards ${playerTwo.length}; cards in limbo: ${limbo.length}`)
     }
 }
 
