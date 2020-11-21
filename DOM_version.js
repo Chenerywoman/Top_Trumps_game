@@ -58,7 +58,7 @@ const sybillTrelawney = new Graduate("Sybill Trelawney", 1973, 7, 4, 1, 3, "http
 const nymphadoraTonks = new Graduate("Nymphadora Tonks", 1984, 14, 4, 2, 4, "https://cdn.staticneo.com/w/harrypotter/thumb/Nymphadora_Tonks.jpg/200px-Nymphadora_Tonks.jpg");
 const horaceSlughorn = new Graduate("Horace Slughorn", 1931, 10, 8, 2, 9, "https://www.moviemaniauk.co.uk/assets/professor-horace-slughorn.jpg");
 const victorKrum = new Graduate("Victor Krum", 1994, 10, 2, 5, 7, "https://static.wikia.nocookie.net/harrypotter/images/9/93/Viktor_Krum_promo_Yule_Ball.png/revision/latest/top-crop/width/360/height/450?cb=20120207173113");
-const gilderoyLockhart = new Graduate("Gilderoy Lockhart", 1972, 9, 11, 2, 6,  "https://static.wikia.nocookie.net/harrypotter/images/1/1a/Kenneth_Branagh_as_Gilderoy-Lockhart_%286%29.jpg/revision/latest?cb=20181009213748");
+const gilderoyLockhart = new Graduate("Gilderoy Lockhart", 1972, 9, 11, 2, 6,  "https://www.hobbydb.com/processed_uploads/subject_photo/subject_photo/image/39863/1526583157-31051-5897/Gilderoy-Lockhart_large.jpg");
 const arthurWeasley = new Graduate("Arthur Weasley", 1961, 12, 22, 2, 15, "https://static.wikia.nocookie.net/p__/images/2/25/Arthur-weasley-1-.jpg/revision/latest?cb=20170123000138&path-prefix=protagonist");
 const luciusMalfoy = new Graduate("Lucius Malfoy", 1965, 18, 4, 7, 14, "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-harry-potter-jason-isaacs.jpg");
 const choChang = new Graduate("Cho Chang", 1990, 6, 2, 2, 5, "https://static.wikia.nocookie.net/harrypotter/images/1/1e/Cho_Chang.jpg/revision/latest?cb=20180322164130");
