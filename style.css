@@ -5,6 +5,7 @@
 body {
     background-color: #e3a000;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
 
 }
 
@@ -194,30 +195,100 @@ select {
 
 }
 
-@media only screen and (max-width: 600px) {
+/* smaller tablets (landscape) ----------- */
+@media only screen and (min-device-width: 501px) and (max-device-width: 767px) and (orientation: landscape) {
+    /* @media only screen and (max-width: 600px) { */
+    
+
+    .container.cards{
+        width: 100vw;
+        margin-left: auto;
+        margin-right:auto;
+        margin-top:0;
+    }
+
+    h2{
+        font-size: x-large;
+        margin: 0%;
+    }
+    
+    .card {
+        height:275px; 
+        width:225px;
+        font-size: 85%;
+    }
+
+    .card-total{
+        font-size: large;
+        color: #00165e;
+        margin-top: 1%;
+    }
+
+    #player_one_back, #player_two_back{
+        font-size: 40px;
+    }
+
+    #player_one_back, #player_two_back{
+        font-size: 40px;
+        padding: 80px 0px 0px 0px;
+    }
+
+    .container.messages {
+        margin-top: 2%;
+        margin-bottom: 1%;
+        width: 90%;
+        font-size: large;
+    }
+
+    .container.buttons{
+        margin-top: 0;
+    }
+
+    label, select {
+        font-size: 20px;
+    }
+
+    .compare {
+        font-size: 20px;
+        margin-top: 0
+    }
+    
+    }
+
+/* smaller tablets (portrait) ----------- */
+@media only screen and (min-device-width: 501px) and (max-device-width: 767px) and (orientation: portrait) {
+/* @media only screen and (max-width: 600px) { */
 
     .container.cards{
         width: 100vw;
         margin: auto;
     }
 
-    .card-pile .card{
-        width: 55%;
-    }
-
     .card {
-        height:85%; 
-        width:100%;
-    }
-
-    .messages {
-        margin-top: 10%;
+        height:325px; 
+        width:250px;
     }
 
     #player_one_back, #player_two_back{
-            font-size: 40px;
+        font-size: 40px;
     }
+
+    .container.messages {
+        margin-top: 2%;
+        margin-bottom: 0;;
+        width: 90%;
+    }
+
+    .container.buttons{
+        margin-top: 0;
+    }
+
+    button {
+        font-size: 20px;
+    }
+
 }
+
 
 @media only screen and (max-width: 500px) {
 
@@ -264,4 +335,16 @@ select {
         font-size: 20px;
     }
 
+}
+
+@media only screen and (max-width: 350px) {
+
+    .container.cards{
+        width: 100vw;
+    }
+
+    .card {
+        height:300px; 
+        width:250px;
+    }
 }

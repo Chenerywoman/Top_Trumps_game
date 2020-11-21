@@ -47,7 +47,7 @@ const bellatrixLeStrange = new Graduate("Bellatrix LeStrange", 1962, 12, 7, 8, 2
 const rubeusHagrid = new Graduate("Rubeus Hagrid", 1940, 16, 1, 3, 24, "https://static.wikia.nocookie.net/harrypotter/images/f/fe/Rubeus_Hagrid.png/revision/latest?cb=20161123044204");
 const fleurDelacour = new Graduate("Fleur Delacour", 1994, 9, 7, 2, 12, "https://images.ctfassets.net/usf1vwtuqyxm/1FGP9adjbqe4Q8AgGaIQIC/1de41e9d4dd4eb2de0a63fe369989fe5/FleurDelacour_WB_F4_FleurDelacourCloseup_Still_080615_Land.jpg?w=914");
 const ginnyWeasley = new Graduate("Ginny Weasley", 1992, 7, 12, 2, 20, "https://bloximages.newyork1.vip.townnews.com/roanoke.com/content/tncms/assets/v3/editorial/b/40/b402a776-942a-11e3-b3c3-0017a43b2370/52fbe4691cc2e.preview-300.jpg?crop=300%2C300%2C0%2C50&resize=1200%2C1200&order=crop%2Cresize");
-const argusFinch = new Graduate("Argus Filch", 1973, 0, 5, 1, "https://static.wikia.nocookie.net/harrypotter/images/c/c8/Mainfulcd.jpg/revision/latest?cb=20200413210532");
+const argusFinch = new Graduate("Argus Filch", 1973, 6, 5, 1, 8,"https://static.wikia.nocookie.net/harrypotter/images/c/c8/Mainfulcd.jpg/revision/latest?cb=20200413210532");
 const remusLupin = new Graduate("Remus Lupin", 1971, 0, 4, 8, 19, "https://static.wikia.nocookie.net/harrypotterfanon/images/0/0c/Remus_lupin.jpg/revision/latest/top-crop/width/360/height/450?cb=20170802175350");
 const lunaLovegood = new Graduate("Luna Lovegood", 1992, 6, 2, 1, 11, "https://images.ctfassets.net/usf1vwtuqyxm/t6GVMDanqSKGOKaCWi8oi/74b6816d9f913623419b98048ec87d25/LunaLovegood_WB_F5_LunaLovegoodPromoCloseUp_Promo_080615_Port.jpg");
 const dracoMalfoy = new Graduate("Draco Malfoy", 1991, 10, 4, 4, 18, "https://imgix.bustle.com/rehost/2016/9/13/6a08c5f4-def1-4c78-9227-2dbd4c268b6a.jpg");
