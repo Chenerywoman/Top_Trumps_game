@@ -10,12 +10,16 @@ body {
 h1 {
     text-align: center;
     color: 	#00165e;
+    font-family: 'Henny Penny', cursive;
     font-size: 40px;
     margin: 0;
+
 }
 
 h2{ 
     color: 	#033807;
+    font-family: 'Henny Penny', cursive;
+    margin-bottom: 0;
 }
 
 .container {
@@ -55,11 +59,12 @@ h2{
     font-size: large;
     box-shadow: 5px 5px 10px #a58d7e;
     color: #2d004d;
-
+    font-family: 'Fondamento', cursive;
 }
 
 h3 span {
-    color: silver;;
+    color: silver;
+    font-family: 'Fontdiner Swanky', cursive;
 }
 
 img {
@@ -72,7 +77,12 @@ table {
     margin: auto;
 }
 
-td, th{
+th{
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
     text-align: left;
 }
 
@@ -89,10 +99,11 @@ td span {
 }
 
 .card-total{
-    margin-top: 5%;
+    margin-top: 1%;
     font-size: x-large;
     color: #00165e;
     font-weight: bold;
+    font-family: 'Fontdiner Swanky', cursive;
 }
 
 .set-aside {
@@ -101,7 +112,8 @@ td span {
     color: #00165e;
     font-weight: bold;
     font-size: x-large;
-    margin: 0.5%;
+    margin-top: 0;
+    font-family: 'Fontdiner Swanky', cursive;
 }
 
 .container.messages {
@@ -111,7 +123,7 @@ td span {
     text-align: center;
     color: #00165e;
     font-size: 25px;
-
+    font-family: 'Fondamento', cursive;
 }
 
 .trump_card {
@@ -158,12 +170,14 @@ button {
     font-size: 25px;
     padding: 5px 10px 5px 10px;
     border-radius: 10%;
+    font-family: 'Fontdiner Swanky', cursive;
 }
 
 label {
     font-size: 25px;
     color: #033807;
     display: none;
+    font-family: 'Fontdiner Swanky', cursive;
 }
 
 select {
@@ -171,7 +185,7 @@ select {
     background-color: #033807; 
     color: silver; 
     border-radius: 5%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Fondamento', cursive;
     display: none;
 }
 
@@ -181,6 +195,11 @@ select {
     .card{
         height:375px; 
         width:300px;
+    }
+
+    #player_one_back, #player_two_back{
+        font-size: 45px;
+        padding: 90px 45px 50px 25px;
     }
 
     .container.messages{
@@ -200,6 +219,21 @@ select {
     .card {
         height:370px; 
         width:260px;
+    }
+
+    table {
+        border-spacing: 20px 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    td, th{
+        padding: 0;
+    }
+
+    #player_one_back, #player_two_back{
+        font-size: 45px;
+        padding: 70px 25px 50px 25px;
     }
 
     .container.messages{
@@ -234,6 +268,21 @@ select {
         font-size: 85%;
     }
 
+    table {
+        border-spacing: 25px 5px;
+        margin: 0;
+        padding:0;
+    }
+
+    td, th{
+        padding: 0;
+    }
+
+    #player_one_back, #player_two_back{
+        font-size: 35px;
+        padding: 70px 0px 0px 35px; 
+    }
+
     .card-total{
         font-size: large;
         color: #00165e;
@@ -243,15 +292,6 @@ select {
     .set-aside{
         font-size: large;
         margin: 0;
-    }
-
-    #player_one_back, #player_two_back{
-        font-size: 40px;
-    }
-
-    #player_one_back, #player_two_back{
-        font-size: 40px;
-        padding: 80px 0px 0px 0px;
     }
 
     .container.messages {
@@ -282,19 +322,47 @@ select {
 
     .container.cards{
         width: 100%;
-        margin: auto;
+        margin: 0 auto;
+    }
+
+    h3 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .player-one, .player-two{
+        margin-top: 0; 
     }
 
     .card {
         height:325px; 
         width:250px;
+        margin-top: 0;
+    }
+
+    table {
+        border-spacing: 25px 5px;
+        margin: 0;
+        padding:0;
+    }
+
+    td, th{
+        padding: 0;
     }
 
     #player_one_back, #player_two_back{
         font-size: 40px;
+        padding: 60px 25px 50px 25px;
+    }
+
+    .card-total{
+        font-size: large;
+        color: #00165e;
+        margin-top: 1%;
     }
 
     .set-aside{
+        font-size: large;
         margin-top: 5px;
     }
 
@@ -302,6 +370,7 @@ select {
         margin-top: 2%;
         margin-bottom: 0;
         width: 90%;
+        font-size: 20px;
     }
 
     .container.buttons{
@@ -337,11 +406,16 @@ select {
 
     #player_one_back, #player_two_back{
         font-size: 40px;
+        padding: 50px 25px 50px 25px;
     }
     
     .card {
-        height:75%; 
-        width:100%;
+        height:325px; 
+        width:250px;
+    }
+
+    table {
+        border-spacing: 25px 5px;
     }
 
     h3 {
@@ -367,10 +441,20 @@ select {
 
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 360px) {
 
     .container.cards{
         width: 100vw;
+    }
+
+    table {
+        border-spacing: 25px 5px;
+        margin: 0;
+        padding:0;
+    }
+
+    td, th{
+        padding: 0;
     }
 
     .card {
