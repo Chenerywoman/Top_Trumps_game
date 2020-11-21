@@ -5,8 +5,6 @@
 body {
     background-color: #e3a000;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    align-items: center;
-
 }
 
 h1 {
@@ -14,6 +12,10 @@ h1 {
     color: 	#00165e;
     font-size: 40px;
     margin: 0;
+}
+
+h2{ 
+    color: 	#033807;
 }
 
 .container {
@@ -31,35 +33,13 @@ h1 {
     margin-right: auto;
 }
 
-.container.messages {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    color: #00165e;
-    font-size: 25px;
-
+.card-pile {
+    width:100%;
 }
 
 .player-one, .player-two{
     width: 50%;
     display: none;  
-}
-
-#player_one_back, #player_two_back{
-    font-size: 50px;
-    transform: rotate(45deg);
-    color: silver;
-    z-index: 1;
-    padding: 95px 50px 95px 50px;
-}
-
-.card-pile {
-    width:100%;
-}
-
-h2{ 
-    color: 	#00165e;
 }
 
 .card{
@@ -78,6 +58,10 @@ h2{
 
 }
 
+h3 span {
+    color: silver;;
+}
+
 img {
     height: 50px;
     width: 50px;
@@ -92,22 +76,52 @@ td, th{
     text-align: left;
 }
 
-.card-total {
-    margin-top: 5%;
+td span {
+    color: silver;
+}
+
+#player_one_back, #player_two_back{
+    font-size: 50px;
+    transform: rotate(45deg);
+    color: silver;
+    z-index: 1;
+    padding: 95px 50px 95px 50px;
 }
 
 .card-total{
+    margin-top: 5%;
     font-size: x-large;
     color: #00165e;
+    font-weight: bold;
+}
+
+.set-aside {
+    display: none;
+    text-align: center;
+    color: #00165e;
+    font-weight: bold;
+    font-size: x-large;
+    margin: 0.5%;
+}
+
+.container.messages {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #00165e;
+    font-size: 25px;
+
+}
+
+.trump_card {
+    color: #9c1203;
+    font-weight: bold;
 }
 
 .category {
-    width: 100%;
-    display: inline-block;
-    margin: auto;
-    text-align: center;
-    color: #2d004d;
-    display: none;
+    color: #033807;
+    font-weight: bold;
 }
 
 .game.new {
@@ -198,7 +212,9 @@ select {
 /* smaller tablets (landscape) ----------- */
 @media only screen and (min-device-width: 501px) and (max-device-width: 767px) and (orientation: landscape) {
     /* @media only screen and (max-width: 600px) { */
-    
+    h1 {
+        font-size: 25px;
+    }
 
     .container.cards{
         width: 100vw;
@@ -208,7 +224,7 @@ select {
     }
 
     h2{
-        font-size: x-large;
+        font-size: large;
         margin: 0%;
     }
     
@@ -224,6 +240,11 @@ select {
         margin-top: 1%;
     }
 
+    .set-aside{
+        font-size: large;
+        margin: 0;
+    }
+
     #player_one_back, #player_two_back{
         font-size: 40px;
     }
@@ -234,8 +255,8 @@ select {
     }
 
     .container.messages {
-        margin-top: 2%;
-        margin-bottom: 1%;
+        margin-top: 0.5%;
+        margin-bottom: 0.5%;
         width: 90%;
         font-size: large;
     }
@@ -260,7 +281,7 @@ select {
 /* @media only screen and (max-width: 600px) { */
 
     .container.cards{
-        width: 100vw;
+        width: 100%;
         margin: auto;
     }
 
@@ -273,9 +294,13 @@ select {
         font-size: 40px;
     }
 
+    .set-aside{
+        margin-top: 5px;
+    }
+
     .container.messages {
         margin-top: 2%;
-        margin-bottom: 0;;
+        margin-bottom: 0;
         width: 90%;
     }
 
@@ -294,6 +319,11 @@ select {
 
     .card-total{
         font-size: 20px;
+    }
+
+    .set-aside{
+        font-size: 20px;
+        margin-top: 5px;
     }
 
     .container.cards{

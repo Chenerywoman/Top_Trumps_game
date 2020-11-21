@@ -121,10 +121,7 @@
 
         </div>
 
-      
-        <h3 class="category">
-            The category is <span class="category-name">category name.</span>
-        </h3>
+        <div class="set-aside">Total cards set aside: <span>no. of cards</span></div>
       
         <div class = "container messages">
             <p class="game winner">
@@ -140,9 +137,14 @@
                 Click on the drop-down menu then click the Compare button.
             </p>
             <p class="round winner"> 
-                Player <span class="player">player</span>'s card wins. 
-                Press the button to move the losing card and any cards from the set aside pile to the winner's pile.  
+                <span class="category">
+                    The category is <span class="category-name">category name</span>.
+                </span>
+                <span class="trump_card">
+                    Player <span class="player">player</span>'s card wins. 
+                </span>
                 <br>
+                Press the button to move the losing card and any cards from the set aside pile to the winner's pile.  
                 The winner's card is also moved to the back of their pile.
             </p>
             <p class="round limbo"> 
@@ -155,11 +157,11 @@
 
             <label for="categories">Choose a category:</label>
             <select name="categories">
-                <option value="courage" >Courage</option>
-                <option value="potions" id="potions">Potions</option>
-                <option value="spells">Spells</option>
-                <option value="broomSkill">Broom Skills</option>
-                <option value="wandPower">Wand Power</option>
+                <option value="matriculation">matriculation</option>
+                <option value="wand">wand</option>
+                <option value="potions">potions</option>
+                <option value="spells">spells</option>
+                <option value="courage">courage</option>
             </select>
             
             <button class="compare">Compare</button>
