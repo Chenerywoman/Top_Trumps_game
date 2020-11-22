@@ -1,0 +1,302 @@
+[
+    {
+        "_name": "Albus Dumbledore",
+        "_matriculation": 1892,
+        "_potions": 4,
+        "_spells": 7,
+        "_wand": 15,
+        "_courage": 27,
+        "_image": "https://cutewallpaper.org/21/dumbledore-images/Jude-Law-to-Play-Young-Dumbledore-in-Fantastic-Beasts-Sequel.jpg",
+        "_alt": "Albus Dumbledore"
+    },
+    {
+        "_name": "Harry Potter",
+        "_matriculation": 1991,
+        "_potions": 7,
+        "_spells": 4,
+        "_wand": 11,
+        "_courage": 28,
+        "_image": "https://imageproxy.themaven.net//https%3A%2F%2Fwww.biography.com%2F.image%2FMTQ3OTg2NjQ0NDg0NDk4OTEx%2Fhp_cropped_gettyimages-113941726.jpg",
+        "_alt": "Harry Potter"
+    },
+    {
+        "_name": "Severus Snape",
+        "_matriculation": 1971,
+        "_potions": 10,
+        "_spells": 9,
+        "_wand": 13,
+        "_courage": 26,
+        "_image": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-harry-potter-alan-rickman.jpg",
+        "_alt": "Severus Snape"
+    },
+    {
+        "_name": "Sirius Black",
+        "_matriculation": 1971,
+        "_potions": 6,
+        "_spells": 5,
+        "_wand": 12,
+        "_courage": 22,
+        "_image": "https://static.wikia.nocookie.net/harrypotter/images/b/bc/OOTP_promo_front_closeup_Sirius_Black.jpg/revision/latest?cb=20150918055024",
+        "_alt": "Sirius Black"
+    },
+    {
+        "_name": "Ron Weasley",
+        "_matriculation": 1991,
+        "_potions": 11,
+        "_spells": 4,
+        "_wand": 14,
+        "_courage": 29,
+        "_image": "https://1.bp.blogspot.com/-_dWDlmiEwSE/Wr-CeiguKBI/AAAAAAAAFNk/ZnXzV6LL0e0PKfjQQG5qsgJKhJoNreZ-ACLcBGAs/s1600/Ron%2BWeasley%2B%2528I%2529.jpg",
+        "_alt": "Ron Weasley"
+    },
+    {
+        "_name": "Hermione Granger",
+        "_matriculation": 1991,
+        "_potions": 5,
+        "_spells": 3,
+        "_wand": 10,
+        "_courage": 29,
+        "_image": "https://static.wikia.nocookie.net/characters/images/a/a5/Latest_%2810%29.jpg/revision/latest?cb=20141230074301",
+        "_alt": "Hermione Granger"
+    },
+    {
+        "_name": "Tom Riddle",
+        "_matriculation": 1938,
+        "_potions": 11,
+        "_spells": 10,
+        "_wand": 13,
+        "_courage": 25,
+        "_image": "https://www.google.com/search?q=pictures+of+tom+riddle&rlz=1C5CHFA_enGB769GB770&sxsrf=ALeKk01kbbNIJBhBgR7CNJ4a8SFOXOh00Q:1605550096961&tbm=isch&source=iu&ictx=1&fir=W-TJlj6tM82eEM%252C00TVcE3Avzr1zM%252C_&vet=1&usg=AI4_-kQpX-b6sU6-nXjGK5Q73qNfOnn1Og&sa=X&ved=2ahUKEwiE4MqZ1IftAhUIHcAKHcrNBLsQ9QF6BAgFEDU&biw=1920&bih=1001#imgrc=W-TJlj6tM82eEM",
+        "_alt": "Tom Riddle"
+    },
+    {
+        "_name": "Cedric Diggory",
+        "_matriculation": 1989,
+        "_potions": 2,
+        "_spells": 4,
+        "_wand": 12,
+        "_courage": 21,
+        "_image": "https://static.wikia.nocookie.net/harrypotter/images/9/90/Cedric_Diggory_Profile.png/revision/latest?cb=20161123045136",
+        "_alt": "Cedric Diggory"
+    },
+    {
+        "_name": "Bellatrix LeStrange",
+        "_matriculation": 1962,
+        "_potions": 7,
+        "_spells": 8,
+        "_wand": 12,
+        "_courage": 13,
+        "_image": "https://media.beliefnet.com/~/media/photos-with-attribution/entertainment/celebrities/bellatrix_lestrange_helena_bonham_carter/bellatrix-lestrange-10_credit-warner-bros.jpg?as=1&extension=webp",
+        "_alt": "Bellatrix LeStrange"
+    },
+    {
+        "_name": "Rubeus Hagrid",
+        "_matriculation": 1940,
+        "_potions": 1,
+        "_spells": 3,
+        "_wand": 16,
+        "_courage": 24,
+        "_image": "https://static.wikia.nocookie.net/harrypotter/images/f/fe/Rubeus_Hagrid.png/revision/latest?cb=20161123044204",
+        "_alt": "Rubeus Hagrid"
+    },
+    {
+        "_name": "Fleur Delacour",
+        "_matriculation": 1994,
+        "_potions": 7,
+        "_spells": 2,
+        "_wand": 9,
+        "_courage": 12,
+        "_image": "https://images.ctfassets.net/usf1vwtuqyxm/1FGP9adjbqe4Q8AgGaIQIC/1de41e9d4dd4eb2de0a63fe369989fe5/FleurDelacour_WB_F4_FleurDelacourCloseup_Still_080615_Land.jpg?w=914",
+        "_alt": "Fleur Delacour"
+    },
+    {
+        "_name": "Ginny Weasley",
+        "_matriculation": 1992,
+        "_potions": 12,
+        "_spells": 2,
+        "_wand": 7,
+        "_courage": 20,
+        "_image": "https://bloximages.newyork1.vip.townnews.com/roanoke.com/content/tncms/assets/v3/editorial/b/40/b402a776-942a-11e3-b3c3-0017a43b2370/52fbe4691cc2e.preview-300.jpg?crop=300%2C300%2C0%2C50&resize=1200%2C1200&order=crop%2Cresize",
+        "_alt": "Ginny Weasley"
+    },
+    {
+        "_name": "Argus Filch",
+        "_matriculation": 1973,
+        "_potions": 1,
+        "_spells": 1,
+        "_wand": 1,
+        "_courage": 1,
+        "_image": "https://static.wikia.nocookie.net/harrypotter/images/c/c8/Mainfulcd.jpg/revision/latest?cb=20200413210532",
+        "_alt": "Argus Filch"
+    },
+    {
+        "_name": "Remus Lupin",
+        "_matriculation": 1971,
+        "_potions": 4,
+        "_spells": 8,
+        "_wand": 0,
+        "_courage": 19,
+        "_image": "https://static.wikia.nocookie.net/harrypotterfanon/images/0/0c/Remus_lupin.jpg/revision/latest/top-crop/width/360/height/450?cb=20170802175350",
+        "_alt": "Remus Lupin"
+    },
+    {
+        "_name": "Luna Lovegood",
+        "_matriculation": 1992,
+        "_potions": 2,
+        "_spells": 1,
+        "_wand": 6,
+        "_courage": 11,
+        "_image": "https://images.ctfassets.net/usf1vwtuqyxm/t6GVMDanqSKGOKaCWi8oi/74b6816d9f913623419b98048ec87d25/LunaLovegood_WB_F5_LunaLovegoodPromoCloseUp_Promo_080615_Port.jpg",
+        "_alt": "Luna Lovegood"
+    },
+    {
+        "_name": "Draco Malfoy",
+        "_matriculation": 1991,
+        "_potions": 4,
+        "_spells": 4,
+        "_wand": 10,
+        "_courage": 18,
+        "_image": "https://imgix.bustle.com/rehost/2016/9/13/6a08c5f4-def1-4c78-9227-2dbd4c268b6a.jpg",
+        "_alt": "Draco Malfoy"
+    },
+    {
+        "_name": "Molly Weasley",
+        "_matriculation": 1961,
+        "_potions": 8,
+        "_spells": 8,
+        "_wand": 24,
+        "_courage": 17,
+        "_image": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-harry-potter-julie-walters.jpg",
+        "_alt": "Molly Weasley"
+    },
+    {
+        "_name": "Neville Longbottom",
+        "_matriculation": 1991,
+        "_potions": 4,
+        "_spells": 1,
+        "_wand": 13,
+        "_courage": 25,
+        "_image": "https://static.wikia.nocookie.net/harrypotter/images/b/b6/Neville_Longbottom.jpg/revision/latest/scale-to-width-down/340?cb=20140610141612",
+        "_alt": "Neville Longbottom"
+    },
+    {
+        "_name": "Minerva McConagall",
+        "_matriculation": 1947,
+        "_potions": 8,
+        "_spells": 6,
+        "_wand": 9,
+        "_courage": 16,
+        "_image": "https://static.wikia.nocookie.net/harrypotter/images/f/f9/PromoHP1_Minerva_McGonagall_2.jpg/revision/latest/scale-to-width-down/340?cb=20150810173547",
+        "_alt": "Minerva McConagall"
+    },
+    {
+        "_name": "Sybill Trelawney",
+        "_matriculation": 1973,
+        "_potions": 4,
+        "_spells": 1,
+        "_wand": 7,
+        "_courage": 3,
+        "_image": "https://i.pinimg.com/originals/91/eb/1f/91eb1f483557eaf49a99848bde8f5d06.jpg",
+        "_alt": "Sybill Trelawney"
+    },
+    {
+        "_name": "Nymphadora Tonks",
+        "_matriculation": 1984,
+        "_potions": 4,
+        "_spells": 2,
+        "_wand": 14,
+        "_courage": 4,
+        "_image": "https://cdn.staticneo.com/w/harrypotter/thumb/Nymphadora_Tonks.jpg/200px-Nymphadora_Tonks.jpg",
+        "_alt": "Nymphadora Tonks"
+    },
+    {
+        "_name": "Horace Slughorn",
+        "_matriculation": 1931,
+        "_potions": 8,
+        "_spells": 2,
+        "_wand": 10,
+        "_courage": 9,
+        "_image": "https://www.moviemaniauk.co.uk/assets/professor-horace-slughorn.jpg",
+        "_alt": "Horace Slughorn"
+    },
+    {
+        "_name": "Victor Krum",
+        "_matriculation": 1994,
+        "_potions": 2,
+        "_spells": 5,
+        "_wand": 10,
+        "_courage": 7,
+        "_image": "https://static.wikia.nocookie.net/harrypotter/images/9/93/Viktor_Krum_promo_Yule_Ball.png/revision/latest/top-crop/width/360/height/450?cb=20120207173113",
+        "_alt": "Victor Krum"
+    },
+    {
+        "_name": "Gilderoy Lockhart",
+        "_matriculation": 1972,
+        "_potions": 11,
+        "_spells": 2,
+        "_wand": 9,
+        "_courage": 6,
+        "_image": "https://www.hobbydb.com/processed_uploads/subject_photo/subject_photo/image/39863/1526583157-31051-5897/Gilderoy-Lockhart_large.jpg",
+        "_alt": "Gilderoy Lockhart"
+    },
+    {
+        "_name": "Arthur Weasley",
+        "_matriculation": 1961,
+        "_potions": 22,
+        "_spells": 2,
+        "_wand": 12,
+        "_courage": 15,
+        "_image": "https://static.wikia.nocookie.net/p__/images/2/25/Arthur-weasley-1-.jpg/revision/latest?cb=20170123000138&path-prefix=protagonist",
+        "_alt": "Arthur Weasley"
+    },
+    {
+        "_name": "Lucius Malfoy",
+        "_matriculation": 1965,
+        "_potions": 4,
+        "_spells": 7,
+        "_wand": 18,
+        "_courage": 14,
+        "_image": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-harry-potter-jason-isaacs.jpg",
+        "_alt": "Lucius Malfoy"
+    },
+    {
+        "_name": "Cho Chang",
+        "_matriculation": 1990,
+        "_potions": 2,
+        "_spells": 2,
+        "_wand": 6,
+        "_courage": 5,
+        "_image": "https://static.wikia.nocookie.net/harrypotter/images/1/1e/Cho_Chang.jpg/revision/latest?cb=20180322164130",
+        "_alt": "Cho Chang"
+    },
+    {
+        "_name": "Peter Pettigrew",
+        "_matriculation": 1971,
+        "_potions": 9,
+        "_spells": 6,
+        "_wand": 1,
+        "_courage": 9,
+        "_image": "https://i.pinimg.com/originals/6f/0e/3a/6f0e3a79374ce894ccfcfc5c81c6675e.jpg",
+        "_alt": "Peter Pettigrew"
+    },
+    {
+        "_name": "Fred Weasley",
+        "_matriculation": 1985,
+        "_potions": 12,
+        "_spells": 8,
+        "_wand": 10,
+        "_courage": 12,
+        "_image": "https://cdn.staticneo.com/w/harrypotter/thumb/Fred.PNG/200px-Fred.PNG",
+        "_alt": "Fred Weasley"
+    },
+    {
+        "_name": "George Weasley",
+        "_matriculation": 1985,
+        "_potions": 13,
+        "_spells": 7,
+        "_wand": 10,
+        "_courage": 12,
+        "_image": "https://static.wikia.nocookie.net/harrypotterfanon/images/b/be/George_Weasley_II.jpg/revision/latest/top-crop/width/360/height/450?cb=20160417155929",
+        "_alt": "George Weasley"
+    }
+]
