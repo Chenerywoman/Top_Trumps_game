@@ -1,3 +1,5 @@
+const { addOrUpdate } = require('../helpers');
+
 const prompt = require('prompt-sync')({sigint: true});
 
 class Graduate {
@@ -71,6 +73,7 @@ let playerTurn = 1;
 const categories = ['matriculation', 'wand', 'potions', 'spells', 'courage'];
 const categoryQuestion = "Please choose one of the following categories: matriculation, wand, potions, spells, courage: ";
 let category = "";
+const winningCards = []
 
 for (i = 0; i < 30; i++) {
     let randomInt = Math.floor(Math.random() * cardsToShuffle.length)
@@ -93,6 +96,8 @@ while (playerOne.length > 0 && playerTwo.length > 0) {
     if (playerOne[0][category] > playerTwo[0][category]) {
 
         roundWinner = "Player one";
+        
+        addOrUpdate(playerOne[0].name, winningCards)
 
         console.log(`This round ${roundWinner} wins: Player 1 card: ${playerOne[0].name}, ${category}: ${playerOne[0][category]} v player 2 card: ${playerTwo[0].name}, ${category}: ${playerTwo[0][category]}`)
 
@@ -110,10 +115,13 @@ while (playerOne.length > 0 && playerTwo.length > 0) {
             limbo.splice(0, limbo.length)
 
         }
+
     }
     else if (playerTwo[0][category] > playerOne[0][category]) {
         
         roundWinner = "Player two";
+
+        addOrUpdate(playerTwo[0].name, winningCards)
 
         console.log(`This round ${roundWinner} wins: Player 1 card: ${playerOne[0].name}, ${category}: ${playerOne[0][category]} v player 2 card: ${playerTwo[0].name}, ${category}: ${playerTwo[0][category]}`)
        
@@ -144,7 +152,7 @@ while (playerOne.length > 0 && playerTwo.length > 0) {
     }
 
     if (playerOne.length > 0 && playerTwo.length > 0) {
-      
+        console.log(winningCards)
         console.log(`Following this round: player 1 total cards: ${playerOne.length}; player 2 total cards ${playerTwo.length}; cards in limbo: ${limbo.length}`)
     }
 }
