@@ -386,15 +386,6 @@ select {
 
 @media only screen and (max-width: 500px) {
 
-    .card-total{
-        font-size: 20px;
-    }
-
-    .set-aside{
-        font-size: 20px;
-        margin-top: 5px;
-    }
-
     .container.cards{
         width: 100vw;
     }
@@ -408,6 +399,13 @@ select {
         font-size: 40px;
         padding: 50px 25px 50px 25px;
     }
+
+    h3 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 0;
+        font-size: large;
+    }
     
     .card {
         height:325px; 
@@ -417,14 +415,18 @@ select {
     table {
         border-spacing: 25px 5px;
     }
-
-    h3 {
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
     
     label {
         font-size: 20px;
+    }
+
+    .card-total{
+        font-size: 20px;
+    }
+
+    .set-aside{
+        font-size: 20px;
+        margin-top: 5px;
     }
 
     .container.messages{
