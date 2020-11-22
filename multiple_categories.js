@@ -89,8 +89,6 @@ while (playerOne.length > 0 && playerTwo.length > 0) {
         category = prompt(categoryQuestion, 'courage')
     } 
     console.log(`Thanks. The category this round is ${category}.`)
-
-    console.log(playerOne[0][category], playerTwo[0][category])
     
     if (playerOne[0][category] > playerTwo[0][category]) {
 
@@ -98,7 +96,6 @@ while (playerOne.length > 0 && playerTwo.length > 0) {
 
         console.log(`This round ${roundWinner} wins: Player 1 card: ${playerOne[0].name}, ${category}: ${playerOne[0][category]} v player 2 card: ${playerTwo[0].name}, ${category}: ${playerTwo[0][category]}`)
 
-        
         playerOne.push(playerTwo[0]);
         playerTwo.shift();
         let frontCard = playerOne.shift();
