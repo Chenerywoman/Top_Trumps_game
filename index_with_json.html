@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">    
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Fontdiner+Swanky&family=Henny+Penny&display=swap" rel="stylesheet">      
+    <title>Hogwarts Top Trumps</title>
+</head>
+<body>
+        <h1>Hogwarts Top Trumps</h1>
+
+        <div class="container cards">
+
+            <div class="player-one">
+                <h2>Player One's cards</h2>
+                <div class="card">
+                    <img src="" alt="picture of witch or wizard">
+                    <h3 class="witch-wizard">name: <span>name of witch or wizard</span></h3>
+
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Score</th>
+                        </tr>
+                        <tr>
+                            <td>matriculation:</td>
+                            <td><span class="matriculation">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>wand:</td>
+                            <td><span class="wand">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>potions</td>
+                            <td><span class="potions">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>spells:</td>
+                            <td><span class="spells">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>courage:</td>
+                            <td><span class="courage">score</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class=card-total>Total cards: <span class=number-of-cards>number</span></div>
+            </div>
+
+            <div class = "card-pile">
+                <h2>Card pile</h2>
+                <div class="card">
+                    <img src="" alt="picture of witch or wizard">
+                    <h3 class="witch-wizard">name: <span>name of witch or wizard</span></h3>
+
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Score</th>
+                        </tr>
+                        <tr>
+                            <td>matriculation:</td>
+                            <td><span class="matriculation">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>wand:</td>
+                            <td><span class="wand">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>potions:</td>
+                            <td><span class="potions">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>spells:</td>
+                            <td><span class="spells">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>courage:</td>
+                            <td><span class="courage">score</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class=card-total>Total cards: <span class=number-of-cards>number</span></div>
+            </div> 
+            
+            <div class="player-two">
+                <h2>Player Two's cards</h2>
+                <div class="card">
+                    <img src="" alt="picture of witch or wizard">
+                    <h3 class="witch-wizard">name: <span>name of witch or wizard</span></h3>
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Score</th>
+                        </tr>
+                        <tr>
+                            <td>matriculation:</td>
+                            <td><span class="matriculation">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>wand:</td>
+                            <td><span class="wand">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>potions:</td>
+                            <td><span class="potions">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>spells:</td>
+                            <td><span class="spells">score</span></td>
+                        </tr>
+                        <tr>
+                            <td>courage:</td>
+                            <td><span class="courage">score</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class=card-total>Total cards: <span class=number-of-cards>number</span></div>
+            </div>
+
+        </div>
+
+        <div class="set-aside">Total cards set aside: <span>no. of cards</span></div>
+      
+        <div class = "container messages">
+            <p class="game winner">
+                Player <span class="player">player</span> wins the game!
+                <br>
+            </p>
+            <p class="game new">
+                Press the button to shuffle and deal the cards for a new game.
+            </p>
+            <p class="turn">
+                Player <span class="player">player</span>'s turn to choose the category. 
+                <br>
+                Click on the drop-down menu then click the Compare button.
+            </p>
+            <p class="round winner"> 
+                <span class="category">
+                    The category is <span class="category-name">category name</span>.
+                </span>
+                <span class="trump_card">
+                    Player <span class="player">player</span>'s card wins. 
+                </span>
+                <br>
+                Press the button to move the losing card and any cards from the set aside pile to the winner's pile.  
+                The winner's card is also moved to the back of their pile.
+            </p>
+            <p class="round limbo"> 
+                Both cards' categories are equal. Press the button to move both players' to the set aside pile.
+            </p>
+        </div>
+
+        <div class = "container buttons">
+            <button class="shuffle">Shuffle</button>
+
+            <label for="categories">Choose a category:</label>
+            <select name="categories">
+                <option value="_matriculation">matriculation</option>
+                <option value="_wand">wand</option>
+                <option value="_potions">potions</option>
+                <option value="_spells">spells</option>
+                <option value="_courage">courage</option>
+            </select>
+            
+            <button class="compare">Compare</button>
+
+            <button class="move">Move</button>
+        </div>
+<script src="./DOM_with_json.js"></script>
+</body>
+</html>

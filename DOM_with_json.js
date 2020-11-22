@@ -42,8 +42,8 @@ const fetchData = async () => {
         const playerOne = [];
         const playerTwo = [];
         let playerTurn = 1;
-        let category = "matriculation";
-        let roundWinner = 0;
+        let category = "_matriculation";
+        let roundWinner = 73;
 
         populateCards(document.getElementsByClassName("card-pile")[0].getElementsByClassName("card")[0], graduates);
         document.getElementsByClassName("card-pile")[0].getElementsByClassName("number-of-cards")[0].innerHTML = graduates.length;
@@ -120,6 +120,9 @@ const fetchData = async () => {
 
         compareButton.addEventListener("click", () => {
 
+            console.log(`category in compareButton ${category}`)
+            console.log(`roundWinner in compareButton ${roundWinner}`)
+
             if (playerTurn == 1) {
 
                 playerTwoTopCard.getElementsByTagName("img")[0].style.display = "block";
@@ -150,15 +153,18 @@ const fetchData = async () => {
                 if (playerOne[0][category] > playerTwo[0][category]) {
                     roundWinner = 1; 
                     showElements(document.getElementsByClassName("round winner")[0])
+                    console.log(`round winner in player1 ${roundWinner}`)
                     
                 } else if (playerTwo[0][category] > playerOne[0][category]) {
                     roundWinner = 2;
 
                     showElements(document.getElementsByClassName("round winner")[0])
+                    console.log(`round winner in player2 ${roundWinner}`)
 
                 } else {
                     roundWinner = 0;
                     showElements(document.getElementsByClassName("round limbo")[0])
+                    console.log(`round winner in else ${roundWinner}`)
                 }
 
                 showPlayer(roundWinner, document.getElementsByClassName("round winner")[0].getElementsByClassName("player")[0] );
