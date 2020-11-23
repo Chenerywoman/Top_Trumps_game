@@ -66,8 +66,9 @@ const peterPettigrew = new Graduate("Peter Pettigrew", 1971, 1, 9, 6, 9, "https:
 const fredWeasley = new Graduate("Fred Weasley", 1985, 10, 12, 8, 12, "https://cdn.staticneo.com/w/harrypotter/thumb/Fred.PNG/200px-Fred.PNG" );
 const georgeWeasley = new Graduate("George Weasley", 1985, 10, 13, 7, 12, "https://static.wikia.nocookie.net/harrypotterfanon/images/b/be/George_Weasley_II.jpg/revision/latest/top-crop/width/360/height/450?cb=20160417155929");
 
-const graduates = [albusDumbledore, harryPotter, severusSnape, siriusBlack, ronWeasley, hermioneGranger, tomRiddle, cedricDiggory, bellatrixLeStrange, rubeusHagrid, fleurDelacour, ginnyWeasley, argusFinch, remusLupin, lunaLovegood, dracoMalfoy, mollyWeasley, nevilleLongbottom, minervaMcGonagall, sybillTrelawney, nymphadoraTonks, horaceSlughorn, victorKrum, gilderoyLockhart, arthurWeasley, luciusMalfoy, choChang, peterPettigrew, fredWeasley, georgeWeasley]
+// const graduates = [albusDumbledore, harryPotter, severusSnape, siriusBlack, ronWeasley, hermioneGranger, tomRiddle, cedricDiggory, bellatrixLeStrange, rubeusHagrid, fleurDelacour, ginnyWeasley, argusFinch, remusLupin, lunaLovegood, dracoMalfoy, mollyWeasley, nevilleLongbottom, minervaMcGonagall, sybillTrelawney, nymphadoraTonks, horaceSlughorn, victorKrum, gilderoyLockhart, arthurWeasley, luciusMalfoy, choChang, peterPettigrew, fredWeasley, georgeWeasley]
 
+const graduates = [albusDumbledore, harryPotter]
 
 let shuffleButton = document.getElementsByClassName("shuffle")[0];
 let selectCategoriesMenu = document.getElementsByTagName("select")[0];
@@ -100,12 +101,54 @@ const showPlayer = (player, element) => {
     player == 1 ? element.innerText = "One" : element.innerText = "Two";
 }
 
+const addOrUpdate = (name, array) => {
+
+    let included = false;
+
+    array.forEach(elem => {
+        if (Object.keys(elem).includes(name)) {
+            elem[name] += 1
+            included = true;
+        } 
+    })
+
+    if (!included) {
+        array.push({[name] : 1})
+    }
+
+    return array;
+
+}
+
+const getHighest = (array) => {
+
+    highest = array.reduce((acc, curr) => Math.max(Object.values(curr)[0], acc), 0);
+    let highestArray = [];
+
+    array.forEach((curr, ind, arr) => {
+        if (Object.values(curr)[0] == highest) {
+            highestArray.push(curr)
+        }
+    })
+    
+    return highestArray;
+
+}
+
+const getNames = (arrayOfObjects) => {
+
+    let winningList = [];
+    arrayOfObjects.forEach((curr, ind, arr) => winningList.push(Object.keys(curr)[0]));
+    return winningList.join(", ");
+}
+
 const limbo = [];
 const playerOne = [];
 const playerTwo = [];
 let playerTurn = 1;
 let category = "matriculation";
 let roundWinner = 0;
+const winningCards = [];
 
 populateCards(document.getElementsByClassName("card-pile")[0].getElementsByClassName("card")[0], graduates);
 document.getElementsByClassName("card-pile")[0].getElementsByClassName("number-of-cards")[0].innerHTML = graduates.length;
@@ -212,11 +255,13 @@ compareButton.addEventListener("click", () => {
         if (playerOne[0][category] > playerTwo[0][category]) {
             roundWinner = 1; 
             showElements(document.getElementsByClassName("round winner")[0])
+            addOrUpdate(playerOne[0].name, winningCards)
+
             
         } else if (playerTwo[0][category] > playerOne[0][category]) {
             roundWinner = 2;
-
             showElements(document.getElementsByClassName("round winner")[0])
+            addOrUpdate(playerTwo[0].name, winningCards)
 
         } else {
             roundWinner = 0;
@@ -282,6 +327,10 @@ compareButton.addEventListener("click", () => {
         hideElements(document.getElementsByClassName("round limbo")[0]);
 
         if (playerOne.length == graduates.length || playerTwo.length == graduates.length){
+            let mostWinning = getHighest(winningCards);
+            let winningNames = getNames(mostWinning);
+            
+            document.getElementsByClassName("winning_cards")[0].innerText = winningNames;
 
             showPlayer(roundWinner, document.getElementsByClassName("game winner")[0].getElementsByTagName("span")[0] )
             showElements(document.getElementsByClassName("game winner")[0]);
@@ -290,13 +339,17 @@ compareButton.addEventListener("click", () => {
 
             if (playerOne.length == graduates.length){
 
+                hideElements(document.getElementsByClassName("player-one")[0]);
                 hideElements(document.getElementsByClassName("player-two")[0]);
+                hideElements(document.getElementsByClassName("set-aside")[0]);
                 populateCards(playerOneTopCard, playerOne);
                 document.getElementsByClassName("player-one")[0].getElementsByClassName("number-of-cards")[0].innerHTML = playerOne.length;
             
             } else {
 
                 hideElements(document.getElementsByClassName("player-one")[0]);
+                hideElements(document.getElementsByClassName("player-two")[0]);
+                hideElements(document.getElementsByClassName("set-aside")[0]);
                 populateCards(playerTwoTopCard, playerTwo);
                 document.getElementsByClassName("player-two")[0].getElementsByClassName("number-of-cards")[0].innerHTML = playerTwo.length;
             }
@@ -342,11 +395,8 @@ compareButton.addEventListener("click", () => {
             showElements(compareButton);
 
         }
-  
+
     })
-    
-    
-    
     
 
 
