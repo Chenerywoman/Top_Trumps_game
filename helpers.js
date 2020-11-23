@@ -51,11 +51,19 @@ const getHighest = (array) => {
 
 }
 
+const getNames = (arrayOfObjects) => {
+
+    let winningList = [];
+    arrayOfObjects.forEach((curr, ind, arr) => winningList.push(Object.keys(curr)[0]));
+    return winningList.join(", ");
+}
+
 module.exports = {
     populateCards,
     hideElements, 
     showElements, 
     addOrUpdate,
-    getHighest
+    getHighest, 
+    getNames
 }
     
