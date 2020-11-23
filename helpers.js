@@ -38,16 +38,9 @@ const addOrUpdate = (name, array) => {
 
 const getHighest = (array) => {
 
-    highest = array.reduce((acc, curr) => Math.max(Object.values(curr)[0], acc), 0);
-    let highestArray = [];
+    const highest = array.reduce((acc, curr) => Math.max(Object.values(curr)[0], acc), 0);
 
-    array.forEach((curr, ind, arr) => {
-        if (Object.values(curr)[0] == highest) {
-            highestArray.push(curr)
-        }
-    })
-    
-    return highestArray;
+    return array.filter(el => Object.values(el)[0] == highest)
 
 }
 
