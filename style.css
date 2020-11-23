@@ -117,7 +117,7 @@ td span {
 }
 
 .container.messages {
-    width: 80%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -136,10 +136,6 @@ td span {
     font-weight: bold;
 }
 
-.game.new {
-    margin: 5px auto 5px auto;
-}
-
 .round, .turn {
     display: none;
     margin: 5px auto 5px auto;
@@ -151,6 +147,14 @@ td span {
 
 .game.winner{
     font-weight: bold;
+    margin: 3px auto 0 auto;
+    color: #9c1203;
+    font-size: 27px;
+}
+
+.game.new {
+    margin: 7px auto 0 auto;
+    font-size: 27px;
 }
 
 .compare, .move {
@@ -295,10 +299,10 @@ select {
     }
 
     .container.messages {
-        margin-top: 0.5%;
-        margin-bottom: 0.5%;
+        margin-top: 0;
+        margin-bottom: 0;
         width: 90%;
-        font-size: large;
+        font-size: 15px;
     }
 
     .container.buttons{
@@ -306,12 +310,17 @@ select {
     }
 
     label, select {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .compare {
-        font-size: 20px;
+        font-size: 15px;
         margin-top: 0
+    }
+
+   .move {
+        margin-top: 0;
+        font-size: 20px
     }
     
     }
@@ -323,6 +332,10 @@ select {
     .container.cards{
         width: 100%;
         margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 15px;
     }
 
     h3 {
@@ -356,14 +369,15 @@ select {
     }
 
     .card-total{
-        font-size: large;
+        font-size: 20px;
         color: #00165e;
         margin-top: 1%;
+        margin-bottom: 0%;
     }
 
     .set-aside{
-        font-size: large;
-        margin-top: 5px;
+        font-size: 20px;
+        margin-top: 0;
     }
 
     .container.messages {
@@ -373,12 +387,20 @@ select {
         font-size: 20px;
     }
 
+    label, select {
+        font-size: 20px;
+    }
+
     .container.buttons{
         margin-top: 0;
     }
 
     button {
         font-size: 20px;
+    }
+
+    .move {
+        margin-top: 0;
     }
 
 }
@@ -438,7 +460,16 @@ select {
     }
 
     button {
+        margin-top: 5%;
         font-size: 20px;
+    }
+
+    .game.winner{
+        font-size: 25px;
+    }
+    
+    .game.new {
+        font-size: 25px;
     }
 
 }
@@ -462,5 +493,13 @@ select {
     .card {
         height:300px; 
         width:250px;
+    }
+
+    .game.winner{
+        font-size: 20px;
+    }
+    
+    .game.new {
+        font-size: 20px;
     }
 }
