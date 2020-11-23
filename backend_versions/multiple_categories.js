@@ -1,4 +1,4 @@
-const { addOrUpdate, getHighest } = require('../helpers');
+const { addOrUpdate, getHighest } = require('./helpers');
 
 const prompt = require('./prompt-sync')({sigint: true});
 
