@@ -1,4 +1,4 @@
-const { addOrUpdate } = require('../helpers');
+const { addOrUpdate, getHighest } = require('../helpers');
 
 const prompt = require('prompt-sync')({sigint: true});
 
@@ -60,7 +60,7 @@ const luciusMalfoy = new Graduate("Lucius Malfoy", 1965, 18, 4, 7, 14);
 const choChang = new Graduate("Cho Chang", 1990, 6, 2, 2, 5);
 const peterPettigrew = new Graduate("Peter Pettigrew", 1971, 1, 9, 6, 13);
 const fredWeasley = new Graduate("Fred Weasley", 1985, 10, 12, 8, 12 );
-const georgeWeasley = new Graduate("George Weasley", 1985, 10, 13, 7, 12)
+const georgeWeasley = new Graduate("George Weasley", 1985, 10, 13, 7, 12);
 
 const graduates = [albusDumbledore, harryPotter, severusSnape, siriusBlack, ronWeasley, hermioneGranger, tomRiddle, cedricDiggory, bellatrixLeStrange, rubeusHagrid, fleurDelacour, ginnyWeasley, argusFinch, remusLupin, lunaLovegood, dracoMalfoy, mollyWeasley, nevilleLongbottom, minervaMcGonagall, sybillTrelawney, nymphadoraTonks, horaceSlughorn, victorKrum, gilderoyLockhart, arthurWeasley, luciusMalfoy, choChang, peterPettigrew, fredWeasley, georgeWeasley]
 
@@ -152,9 +152,10 @@ while (playerOne.length > 0 && playerTwo.length > 0) {
     }
 
     if (playerOne.length > 0 && playerTwo.length > 0) {
-        console.log(winningCards)
         console.log(`Following this round: player 1 total cards: ${playerOne.length}; player 2 total cards ${playerTwo.length}; cards in limbo: ${limbo.length}`)
     }
 }
 
 playerOne.length == 30 && limbo.length == 0 ? console.log(`player 1 wins`) : console.log("player 2 wins");
+getHighest(winningCards)
+console.log(`The card(s) which won the most rounds this game: ${getHighest(winningCards)}`)
