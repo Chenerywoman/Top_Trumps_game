@@ -66,9 +66,7 @@ const peterPettigrew = new Graduate("Peter Pettigrew", 1971, 1, 9, 6, 9, "https:
 const fredWeasley = new Graduate("Fred Weasley", 1985, 10, 12, 8, 12, "https://cdn.staticneo.com/w/harrypotter/thumb/Fred.PNG/200px-Fred.PNG" );
 const georgeWeasley = new Graduate("George Weasley", 1985, 10, 13, 7, 12, "https://static.wikia.nocookie.net/harrypotterfanon/images/b/be/George_Weasley_II.jpg/revision/latest/top-crop/width/360/height/450?cb=20160417155929");
 
-// const graduates = [albusDumbledore, harryPotter, severusSnape, siriusBlack, ronWeasley, hermioneGranger, tomRiddle, cedricDiggory, bellatrixLeStrange, rubeusHagrid, fleurDelacour, ginnyWeasley, argusFinch, remusLupin, lunaLovegood, dracoMalfoy, mollyWeasley, nevilleLongbottom, minervaMcGonagall, sybillTrelawney, nymphadoraTonks, horaceSlughorn, victorKrum, gilderoyLockhart, arthurWeasley, luciusMalfoy, choChang, peterPettigrew, fredWeasley, georgeWeasley]
-
-const graduates = [albusDumbledore, harryPotter]
+const graduates = [albusDumbledore, harryPotter, severusSnape, siriusBlack, ronWeasley, hermioneGranger, tomRiddle, cedricDiggory, bellatrixLeStrange, rubeusHagrid, fleurDelacour, ginnyWeasley, argusFinch, remusLupin, lunaLovegood, dracoMalfoy, mollyWeasley, nevilleLongbottom, minervaMcGonagall, sybillTrelawney, nymphadoraTonks, horaceSlughorn, victorKrum, gilderoyLockhart, arthurWeasley, luciusMalfoy, choChang, peterPettigrew, fredWeasley, georgeWeasley]
 
 let shuffleButton = document.getElementsByClassName("shuffle")[0];
 let selectCategoriesMenu = document.getElementsByTagName("select")[0];
