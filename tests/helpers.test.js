@@ -1,4 +1,4 @@
-const {addOrUpdate, getHighest, getNames} = require("../helpers.js");
+const {addOrUpdate, getHighest, getNames} = require("../backend_versions/helpers.js");
 
 describe('addOrUpdate: updates existing object in array if already in array & adds an object if not', () => {
     const cards = [{"Mary": 1}, {"Sam": 1}, {"Peter": 1}, {"Johnny": 1}, {"June": 1}, {"Bobby":1}];
