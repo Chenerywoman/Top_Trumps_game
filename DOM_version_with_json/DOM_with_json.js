@@ -3,9 +3,7 @@ const fetchData = async () => {
     try {
         const response = await fetch("graduates.json");
         const graduates = await response.json();
-        console.log(typeof graduates)
-        console.log(Array.isArray(graduates))
-        console.log(graduates[0]._name)
+
 
         let shuffleButton = document.getElementsByClassName("shuffle")[0];
         let selectCategoriesMenu = document.getElementsByTagName("select")[0];
