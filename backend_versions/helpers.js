@@ -33,9 +33,10 @@ const getNames = (arrayOfObjects) => {
     return winningList.join(", ");
 }
 
+
 module.exports = {
     addOrUpdate,
     getHighest, 
-    getNames
+    getNames, 
 }
     

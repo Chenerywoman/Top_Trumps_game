@@ -55,6 +55,3 @@ describe('getNames: takes an array of objects and returns a string of the keys, 
 
 })
  
- 
-
-
