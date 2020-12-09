@@ -36,12 +36,18 @@ This is a simple version using one category which runs in node.js. It shuffles t
 
 ### Two player back-end version: multiple-categories.js
 
-This two player runs on the console using node.js.  It has 5 categories for each card.  I used the prompt-sync npm module, which enables players to input a card category to be used for each round.  I created some helper functions (in helper.js) to add the winning card for each round to an array and print out the card(s) which won the most rounds at the end of the game.  I created a test file to test the helper functions with Jest. 
+This two player runs on the console using node.js.  It has 5 categories for each card.  I used the prompt-sync npm module, which enables players to input a card category to be used for each round.  I created some helper functions (in helper.js) to add the winning card for each round to an array and print out the card(s) which won the most rounds at the end of the game.  
+
+#### Testing
+I created a test file to test the helper functions with Jest. 
 
 ### Two player web version using a separate .json file: DOM_version_with_json
 
 This was my first front-end version. I originally had a large js array of objects in my main file, which took up over 300 lines of code!  I decided it would be neater to have it in a separate .json file, which I accessed using fetch() from the DOM api.  
 
-### Two player web version using a javascript class for the cards data
+### Two player web version using a javascript class for the cards data: DOM_version.js
 
 In my final version I used a javascript class in my main file to create the 30 cards.  This was more efficient when I wanted to change the category names.  
+
+#### Testing
+I created a separate file and added copies of some of the functions used to manipulate the DOM.  I then created tests to test some of them using Jest. 
